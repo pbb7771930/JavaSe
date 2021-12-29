@@ -40,7 +40,7 @@ public class nc1 {
         return bigInteger1.add(bigInteger2).toString();
     }
     /*
-
+    方法三：使用BigDecimal
      */
     public String solve3 (String s, String t) {
         // write code here
