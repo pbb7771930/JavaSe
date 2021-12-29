@@ -1,4 +1,4 @@
 package main.java.suanfa;
 
-public class nc4 {
+public class nc5 {
 }
