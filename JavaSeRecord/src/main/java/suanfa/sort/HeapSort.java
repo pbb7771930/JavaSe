@@ -31,13 +31,13 @@ public class HeapSort {
         }
         return arr;
     }
-
+    //
     private void buildMaxHeap(int[] arr, int len) {
         for (int i = (int) Math.floor(len / 2); i >= 0; i--) {
             heapify(arr, i, len);
         }
     }
-
+    //
     private void heapify(int[] arr, int i, int len) {
         int left = 2 * i + 1;
         int right = 2 * i + 2;
@@ -56,7 +56,7 @@ public class HeapSort {
             heapify(arr, largest, len);
         }
     }
-
+    //交换i和j位置的数值
     private void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
