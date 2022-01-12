@@ -1,4 +1,4 @@
-package main.java.suanfa;
+package suanfa;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

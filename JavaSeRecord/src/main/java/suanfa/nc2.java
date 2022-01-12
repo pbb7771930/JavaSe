@@ -1,4 +1,4 @@
-package main.java.suanfa;
+package suanfa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,10 +28,10 @@ public class nc2 {
     ArrayList的底层就是用数组实现的，所以将链表储存在一个ArrayList中，然后利用双指针，一个指向最前面，一个指向最后面，
     依次访问并向题目要求的链表形式进行转换！
      */
-    public void reorderList1(ListNode head) {
+    public void reorderList1(main.java.suanfa.ListNode head) {
         if (head == null)
             return;
-        List<ListNode> list = new ArrayList<>();   //  ArrayList为线性表
+        List<main.java.suanfa.ListNode> list = new ArrayList<>();   //  ArrayList为线性表
         // 将 链表的每一个节点依次 存进ArrayList中
         while (head != null) {
             list.add(head);
@@ -58,25 +58,25 @@ public class nc2 {
     可以利用 快慢指针，快指针一次走两步，慢指针依次走一步，当快指针走到终点的时候，此时如果链表的长度为偶数时，
     此时中间节点有两个，慢指针则走到了左端点。反之，慢指针则走到中间节点。
      */
-    public void reorderList2(ListNode head) {
+    public void reorderList2(main.java.suanfa.ListNode head) {
         if (head == null || head.next == null || head.next.next == null)
             return;
 
-        ListNode slow = head;
-        ListNode fast = head.next;
+        main.java.suanfa.ListNode slow = head;
+        main.java.suanfa.ListNode fast = head.next;
         //1、快慢指针找出中间点
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
         //fast.next == null  长度为奇数,否则长度为偶数
-        ListNode mid = slow.next; //定义中间节点
+        main.java.suanfa.ListNode mid = slow.next; //定义中间节点
         slow.next = null;
-        ListNode newHead = reverse(mid); //以mid为起点，反转后面的节点
+        main.java.suanfa.ListNode newHead = reverse(mid); //以mid为起点，反转后面的节点
 
         //3、合并链表，把head和newHead合并,节点交叉互换
         while (newHead != null) {
-            ListNode temp = newHead.next;  //保存下一个节点
+            main.java.suanfa.ListNode temp = newHead.next;  //保存下一个节点
             newHead.next = head.next;  //指向head的下一节点
             head.next = newHead; //head的下一节点指向newHead
             head = newHead.next; // head后移
@@ -85,16 +85,16 @@ public class nc2 {
 
     }
     //2、反转链表方法
-    public ListNode reverse(ListNode head){
+    public main.java.suanfa.ListNode reverse(main.java.suanfa.ListNode head){
         if(head == null)
             return head;
         //2.1、先把头节点变成尾节点
-        ListNode tail = head;  //head 值给tail，tail为head下一节点
+        main.java.suanfa.ListNode tail = head;  //head 值给tail，tail为head下一节点
         head = head.next; //head 指向下一个节点
         tail.next = null; //tail变为尾节点
         //2.2、反转后面的节点
         while(head != null){
-            ListNode tmp = head.next; // temp储存了此时头结点的下一个结点
+            main.java.suanfa.ListNode tmp = head.next; // temp储存了此时头结点的下一个结点
             head.next = tail; // 头结点的下一个结点指向 tail
             tail = head; // 此时的头结点则变为尾结点
             head = tmp; // 刚刚储存起来的结点则为头结点
@@ -103,10 +103,10 @@ public class nc2 {
     }
 
     public static void main(String[] args) {
-        ListNode ls1 = new ListNode(1);
-        ListNode ls2 = new ListNode(2);
-        ListNode ls3 = new ListNode(3);
-        ListNode ls4 = new ListNode(4);
+        main.java.suanfa.ListNode ls1 = new main.java.suanfa.ListNode(1);
+        main.java.suanfa.ListNode ls2 = new main.java.suanfa.ListNode(2);
+        main.java.suanfa.ListNode ls3 = new main.java.suanfa.ListNode(3);
+        main.java.suanfa.ListNode ls4 = new main.java.suanfa.ListNode(4);
         ls1.next = ls2;
         ls2.next = ls3;
         ls3.next = ls4;

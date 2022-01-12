@@ -1,4 +1,4 @@
-package main.java.suanfa;
+package suanfa;
 
 public class nc10 {
 }

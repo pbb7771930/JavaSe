@@ -53,6 +53,59 @@
             <version>4.13.1</version>
             <scope>compile</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-core -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-core</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-http -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-http</artifactId>
+            <version>3.14.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-http-common -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-http-common</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.15</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.mina/mina-integration-jmx -->
+
+
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.72.Final</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.mina/mina-core -->
+        <dependency>
+            <groupId>org.apache.mina</groupId>
+            <artifactId>mina-core</artifactId>
+            <version>2.1.5</version>
+        </dependency>
+
+
 
     </dependencies>
 

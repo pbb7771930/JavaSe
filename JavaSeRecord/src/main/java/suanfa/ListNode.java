@@ -1,4 +1,5 @@
-package main.java.suanfa;
+package suanfa;
+
 import java.util.List.*;
 
 public class ListNode {
