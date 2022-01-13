@@ -14,6 +14,7 @@ public class BubbleSort  {
 
     public int[] sort(int[] arr) throws Exception {
         // 排序前输出
+        System.out.println("排序前输出");
         for (int j : arr) {
             System.out.print(j + ",");
         }
@@ -32,6 +33,7 @@ public class BubbleSort  {
         }
         //输出数组
         System.out.println();
+        System.out.println("排序后输出");
         for (int j : arr) {
             System.out.print(j + ",");
         }
