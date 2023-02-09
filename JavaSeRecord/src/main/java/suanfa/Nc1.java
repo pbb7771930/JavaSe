@@ -44,7 +44,7 @@ public class Nc1 {
      * @Description 方法二：使用BigInteger
      * @Date 2022/1/19 17:09
      * @params
-     * @return: eturn
+     * @return: return
      */
     public String solve2 (String s, String t) {
         // write code here

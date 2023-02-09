@@ -1,7 +1,5 @@
 package suanfa.sort;
 
-import java.util.Arrays;
-
 /*
 https://www.runoob.com/w3cnote/ten-sorting-algorithm.html
 冒泡排序
